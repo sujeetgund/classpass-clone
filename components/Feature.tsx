@@ -20,14 +20,22 @@ function Feature() {
         }
     ]
     return (
-        <div className=' my-7 flex-col justify-center items-center max-w-xl mx-auto text-center'>
-            <div className='flex-col justify-center items-center space-y-3'>
-                <h3 className='font-semibold text-4xl'>What can I book with ClassPass?</h3>
+        <div className=' my-7 flex-col justify-center items-center max-w-5xl mx-auto text-center pb-5'>
+            <div className='flex-col justify-center items-center space-y-3 mt-4'>
+                <h3 className='font-semibold text-4xl heading'>What can I book with ClassPass?</h3>
                 <p>Find a class or appointment with one app — subject to availability in your area</p>
             </div>
 
-            <div>
-
+            <div className='w-full flex justify-evenly items-center my-8'>
+                {features.map(({ title, description, image }) => {
+                    return (
+                        <div className='flex flex-col justify-center items-center space-y-3 max-w-xs mx-auto' key={title}>
+                            <img src={image} alt={title} height={70} />
+                            <h3 className='font-semibold text-lg'>{title}</h3>
+                            <p className='font-extralight text-sm'>{description}</p>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

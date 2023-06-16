@@ -1,10 +1,11 @@
-import { Feature, Hero } from "@/components";
+import { Feature, Hero, Mobileapp } from "@/components";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      {/* <Feature /> */}
+      <Feature />
+      <Mobileapp />
     </main>
   )
 }

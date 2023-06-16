@@ -11,17 +11,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .btn {
-  @apply text-white text-base bg-blue-600 py-2 px-4 rounded-full hover:bg-blue-700;
+  @apply text-white text-base bg-[#05f] py-2 px-4 rounded-full hover:bg-blue-600;
 }
 
 .nav-btn {
-  @apply py-3 px-2 bg-transparent hover:bg-gray-100 h-full;
+  @apply py-5 px-3 bg-transparent hover:bg-gray-100 h-full;
 }
 
 .heading {
-  @apply font-['Anton'] text-4xl;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
